@@ -3,13 +3,13 @@ class Student < ActiveRecord::Base
     self.first_name + " " + self.last_name
   end
 
-  def active? 
+  def active?
     self.active? "active" : "inactive"
-  end 
+  end
 
   def activate
-    self.active = !self.active 
+    self.active = !self.active
     self.save
-  end 
-  
+  end
+
 end
